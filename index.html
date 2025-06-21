@@ -1,88 +1,146 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Menú - Al-Turk Doner Kebab Casar</title>
+  <meta charset="UTF-8">
+  <title>Menú Döner Kebab Al-Turk</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f8f3ec;
-      color: #333;
-      margin: 0;
-      padding: 0;
+      line-height: 1.6;
+      margin: 20px;
+      background: #fff8f0;
     }
-    header {
-      background-color: #c0392b;
-      color: white;
-      padding: 1rem;
-      text-align: center;
+    h1, h2 {
+      color: #b30000;
     }
-    h1 {
-      margin: 0;
+    section {
+      margin-bottom: 30px;
     }
-    .menu {
-      padding: 2rem;
-      max-width: 700px;
-      margin: auto;
+    ul {
+      list-style: none;
+      padding-left: 0;
     }
-    .categoria {
-      margin-bottom: 2rem;
-    }
-    .item {
+    li {
+      margin-bottom: 10px;
       display: flex;
-      justify-content: space-between;
-      margin-bottom: 0.5rem;
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 0.3rem;
+      align-items: center;
+      gap: 10px;
     }
-    .item span {
+    .menu-img {
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .item-name {
+      flex-grow: 1;
+    }
+    .precio {
       font-weight: bold;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-      background-color: #eee;
+      color: #444;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Al-Turk Doner Kebab Casar</h1>
-    <p>Menú Online</p>
-  </header>
+  <h1>Döner Kebab Al-Turk - Casar de Cáceres</h1>
+  <p><strong>Teléfono:</strong> 617 16 79 02</p>
+  <p><em>Ingrediente extra: +0,50€</em></p>
 
-  <div class="menu">
-    <div class="categoria">
-      <h2>🌯 Kebabs</h2>
-      <div class="item"><span>Kebab de ternera</span><span>€5.50</span></div>
-      <div class="item"><span>Kebab de pollo</span><span>€5.00</span></div>
-      <div class="item"><span>Kebab mixto</span><span>€6.00</span></div>
-    </div>
+  <section>
+    <h2>Kebabs</h2>
+    <ul>
+      <li><img src="img/kebab.jpg" class="menu-img" alt="Kebab">
+          <span class="item-name">Döner Kebab Pollo o Ternera</span>
+          <span class="precio">4,00€</span>
+      </li>
+      <li><img src="img/kebab-mixto.jpg" class="menu-img" alt="Kebab Mixto">
+          <span class="item-name">Döner Kebab Mixto</span>
+          <span class="precio">4,50€</span>
+      </li>
+      <li><img src="img/kebab-queso.jpg" class="menu-img" alt="Kebab con Queso">
+          <span class="item-name">Döner Kebab con Queso</span>
+          <span class="precio">5,00€</span>
+      </li>
+    </ul>
+  </section>
 
-    <div class="categoria">
-      <h2>🥙 Durum</h2>
-      <div class="item"><span>Durum de ternera</span><span>€6.00</span></div>
-      <div class="item"><span>Durum de pollo</span><span>€5.50</span></div>
-      <div class="item"><span>Durum mixto</span><span>€6.50</span></div>
-    </div>
+  <section>
+    <h2>Dürums</h2>
+    <ul>
+      <li><img src="img/durum.jpg" class="menu-img" alt="Dürüm">
+          <span class="item-name">Dürüm</span>
+          <span class="precio">5,00€</span>
+      </li>
+      <li><img src="img/durum-mixto.jpg" class="menu-img" alt="Dürüm Mixto">
+          <span class="item-name">Dürüm Mixto 2 Carnes</span>
+          <span class="precio">5,50€</span>
+      </li>
+    </ul>
+  </section>
 
-    <div class="categoria">
-      <h2>🍟 Complementos</h2>
-      <div class="item"><span>Patatas fritas</span><span>€2.00</span></div>
-      <div class="item"><span>Alitas (5 uds)</span><span>€4.00</span></div>
-    </div>
+  <section>
+    <h2>Pizzas</h2>
+    <ul>
+      <li><img src="img/pizza.jpg" class="menu-img" alt="Pizza Turca">
+          <span class="item-name">Pizza Turca</span>
+          <span class="precio">5,50€</span>
+      </li>
+    </ul>
+  </section>
 
-    <div class="categoria">
-      <h2>🥤 Bebidas</h2>
-      <div class="item"><span>Refrescos</span><span>€1.50</span></div>
-      <div class="item"><span>Agua</span><span>€1.00</span></div>
-    </div>
-  </div>
+  <section>
+    <h2>Platos</h2>
+    <ul>
+      <li><img src="img/plato.jpg" class="menu-img" alt="Plato Kebab">
+          <span class="item-name">Kebab en Plato</span>
+          <span class="precio">6,50€</span>
+      </li>
+    </ul>
+  </section>
 
-  <footer>
-    © 2025 Al-Turk Doner Kebab Casar – ¡Gracias por visitarnos!
-  </footer>
+  <section>
+    <h2>Vegetal Falafel</h2>
+    <ul>
+      <li><img src="img/falafel.jpg" class="menu-img" alt="Falafel">
+          <span class="item-name">Kebab Vegetal Falafel</span>
+          <span class="precio">3,50€</span>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Raciones</h2>
+    <ul>
+      <li><img src="img/patatas.jpg" class="menu-img" alt="Patatas Fritas">
+          <span class="item-name">Patatas Fritas</span>
+          <span class="precio">2,00€</span>
+      </li>
+      <li><img src="img/kapsalon.jpg" class="menu-img" alt="Kapsalón">
+          <span class="item-name">Kapsalón</span>
+          <span class="precio">8,00€</span>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Menús</h2>
+    <ul>
+      <li><img src="img/menu-kebab.jpg" class="menu-img" alt="Menú Kebab">
+          <span class="item-name">Menú Kebab Solo Carne</span>
+          <span class="precio">7,00€</span>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Hamburguesas</h2>
+    <ul>
+      <li><img src="img/hamburguesa.jpg" class="menu-img" alt="Hamburguesa">
+          <span class="item-name">Hamburguesa Normal</span>
+          <span class="precio">5,00€</span>
+      </li>
+    </ul>
+    <p><em>También hay hamburguesas sin menú</em></p>
+  </section>
 </body>
 </html>
