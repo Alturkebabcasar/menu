@@ -5,142 +5,221 @@
   <title>Menú Döner Kebab Al-Turk</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 20px;
-      background: #fff8f0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #fefefe;
+      margin: 0;
+      padding: 0;
+      color: #333;
     }
-    h1, h2 {
+    header {
+      background: #b30000;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+    }
+    details {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    summary {
+      padding: 1rem;
+      font-size: 1.3rem;
+      font-weight: bold;
+      cursor: pointer;
       color: #b30000;
-    }
-    section {
-      margin-bottom: 30px;
+      background: #f9f9f9;
+      border-bottom: 1px solid #eee;
     }
     ul {
       list-style: none;
-      padding-left: 0;
+      padding: 0;
+      margin: 0;
     }
     li {
-      margin-bottom: 10px;
       display: flex;
-      align-items: center;
-      gap: 10px;
+      justify-content: space-between;
+      padding: 0.8rem 1rem;
+      border-bottom: 1px solid #eee;
     }
-    .menu-img {
-      width: 50px;
-      height: 50px;
-      object-fit: cover;
-      border-radius: 8px;
+    li:last-child {
+      border-bottom: none;
     }
     .item-name {
-      flex-grow: 1;
+      font-weight: 500;
     }
-    .precio {
+    .item-price {
       font-weight: bold;
-      color: #444;
+      color: #b30000;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #777;
+      padding: 2rem;
+    }
+    .section-image {
+      width: 100%;
+      border-radius: 8px;
+      margin-top: 10px;
     }
   </style>
 </head>
 <body>
-  <h1>Döner Kebab Al-Turk - Casar de Cáceres</h1>
-  <p><strong>Teléfono:</strong> 617 16 79 02</p>
-  <p><em>Ingrediente extra: +0,50€</em></p>
+  <header>
+    <h1>Döner Kebab Al-Turk</h1>
+    <p>Casar de Cáceres - Tel: 617 16 79 02</p>
+  </header>
+  <div class="container">
 
-  <section>
-    <h2>Kebabs</h2>
-    <ul>
-      <li><img src="img/kebab.jpg" class="menu-img" alt="Kebab">
-          <span class="item-name">Döner Kebab Pollo o Ternera</span>
-          <span class="precio">4,00€</span>
-      </li>
-      <li><img src="img/kebab-mixto.jpg" class="menu-img" alt="Kebab Mixto">
-          <span class="item-name">Döner Kebab Mixto</span>
-          <span class="precio">4,50€</span>
-      </li>
-      <li><img src="img/kebab-queso.jpg" class="menu-img" alt="Kebab con Queso">
-          <span class="item-name">Döner Kebab con Queso</span>
-          <span class="precio">5,00€</span>
-      </li>
-    </ul>
-  </section>
+    <details>
+      <summary>KEBABS</summary>
+      <ul>
+        <li><span class="item-name">Döner Kebab Pollo o Ternera</span><span class="item-price">4,00€</span></li>
+        <li><span class="item-name">Döner Kebab Mixto</span><span class="item-price">4,50€</span></li>
+        <li><span class="item-name">Döner Kebab con Queso</span><span class="item-price">5,00€</span></li>
+        <li><span class="item-name">Döner Kebab Especial normal</span><span class="item-price">4,50€</span></li>
+        <li><span class="item-name">Döner Kebab Especial</span><span class="item-price">5,00€</span></li>
+      </ul>
+      <img src="https://cdn.pixabay.com/photo/2017/07/16/10/43/kebab-2507804_1280.jpg" alt="Kebab" class="section-image">
+    </details>
 
-  <section>
-    <h2>Dürums</h2>
-    <ul>
-      <li><img src="img/durum.jpg" class="menu-img" alt="Dürüm">
-          <span class="item-name">Dürüm</span>
-          <span class="precio">5,00€</span>
-      </li>
-      <li><img src="img/durum-mixto.jpg" class="menu-img" alt="Dürüm Mixto">
-          <span class="item-name">Dürüm Mixto 2 Carnes</span>
-          <span class="precio">5,50€</span>
-      </li>
-    </ul>
-  </section>
+    <details>
+      <summary>DURUMS</summary>
+      <ul>
+        <li><span class="item-name">Dürüm</span><span class="item-price">5,00€</span></li>
+        <li><span class="item-name">Dürüm mixto 2 carnes</span><span class="item-price">5,50€</span></li>
+        <li><span class="item-name">Dürüm solo carne</span><span class="item-price">5,50€</span></li>
+      </ul>
+      <img src="https://cdn.pixabay.com/photo/2021/01/19/19/19/wrap-5931383_1280.jpg" alt="Dürüm" class="section-image">
+    </details>
 
-  <section>
-    <h2>Pizzas</h2>
-    <ul>
-      <li><img src="img/pizza.jpg" class="menu-img" alt="Pizza Turca">
-          <span class="item-name">Pizza Turca</span>
-          <span class="precio">5,50€</span>
-      </li>
-    </ul>
-  </section>
+    <details>
+      <summary>PIZZAS - LAHMACUN</summary>
+      <ul>
+        <li><span class="item-name">Pizza turca</span><span class="item-price">5,50€</span></li>
+        <li><span class="item-name">Pizza Turca</span><span class="item-price">6,00€</span></li>
+        <li><span class="item-name">Pizza Turca solo carne</span><span class="item-price">6,50€</span></li>
+      </ul>
+      <img src="https://cdn.pixabay.com/photo/2020/08/06/08/57/lahmacun-5468980_1280.jpg" alt="Lahmacun" class="section-image">
+    </details>
 
-  <section>
-    <h2>Platos</h2>
-    <ul>
-      <li><img src="img/plato.jpg" class="menu-img" alt="Plato Kebab">
-          <span class="item-name">Kebab en Plato</span>
-          <span class="precio">6,50€</span>
-      </li>
-    </ul>
-  </section>
+    <details>
+      <summary>KEBAB EN PLATO</summary>
+      <ul>
+        <li><span class="item-name">Kebab en plato</span><span class="item-price">6,50€</span></li>
+        <li><span class="item-name">Plato Solo carne</span><span class="item-price">7,50€</span></li>
+        <li><span class="item-name">Plato con arroz</span><span class="item-price">8,00€</span></li>
+      </ul>
+      <img src="https://cdn.pixabay.com/photo/2020/03/21/19/41/doner-4954544_1280.jpg" alt="Kebab en plato" class="section-image">
+    </details>
 
-  <section>
-    <h2>Vegetal Falafel</h2>
-    <ul>
-      <li><img src="img/falafel.jpg" class="menu-img" alt="Falafel">
-          <span class="item-name">Kebab Vegetal Falafel</span>
-          <span class="precio">3,50€</span>
-      </li>
-    </ul>
-  </section>
+    <details>
+      <summary>VEGETAL FALAFEL</summary>
+      <ul>
+        <li><span class="item-name">Kebab vegetal falafel</span><span class="item-price">3,50€</span></li>
+        <li><span class="item-name">Dürüm vegetal falafel</span><span class="item-price">4,50€</span></li>
+      </ul>
+      <img src="https://cdn.pixabay.com/photo/2018/04/04/18/06/falafel-3290469_1280.jpg" alt="Falafel" class="section-image">
+    </details>
 
-  <section>
-    <h2>Raciones</h2>
-    <ul>
-      <li><img src="img/patatas.jpg" class="menu-img" alt="Patatas Fritas">
-          <span class="item-name">Patatas Fritas</span>
-          <span class="precio">2,00€</span>
-      </li>
-      <li><img src="img/kapsalon.jpg" class="menu-img" alt="Kapsalón">
-          <span class="item-name">Kapsalón</span>
-          <span class="precio">8,00€</span>
-      </li>
-    </ul>
-  </section>
+    <details>
+      <summary>BEBIDAS</summary>
+      <ul>
+        <li><span class="item-name">Coca-Cola</span><span class="item-price">1,50€</span></li>
+        <li><span class="item-name">Sprite</span><span class="item-price">1,50€</span></li>
+        <li><span class="item-name">Fanta de Naranja</span><span class="item-price">1,50€</span></li>
+        <li><span class="item-name">Aquarius</span><span class="item-price">1,50€</span></li>
+        <li><span class="item-name">Nestea</span><span class="item-price">1,50€</span></li>
+      </ul>
+      <img src="https://cdn.pixabay.com/photo/2016/03/05/19/02/cola-1236524_1280.jpg" alt="Bebidas" class="section-image">
+    </details>
 
-  <section>
-    <h2>Menús</h2>
-    <ul>
-      <li><img src="img/menu-kebab.jpg" class="menu-img" alt="Menú Kebab">
-          <span class="item-name">Menú Kebab Solo Carne</span>
-          <span class="precio">7,00€</span>
-      </li>
-    </ul>
-  </section>
+    <details>
+      <summary>RACIONES</summary>
+      <ul>
+        <li><span class="item-name">Patatas Fritas</span><span class="item-price">2,00€</span></li>
+        <li><span class="item-name">Patatas Fritas Deluxe</span><span class="item-price">2,50€</span></li>
+        <li><span class="item-name">Alitas de Pollo (5 uds. con patatas)</span><span class="item-price">5,50€</span></li>
+        <li><span class="item-name">Nuggets de Pollo (5 uds. con patatas)</span><span class="item-price">5,50€</span></li>
+        <li><span class="item-name">Aros de Cebolla</span><span class="item-price">4,00€</span></li>
+        <li><span class="item-name">Croquetas (6 uds.)</span><span class="item-price">3,50€</span></li>
+        <li><span class="item-name">Patatas con Carne</span><span class="item-price">3,50€</span></li>
+        <li><span class="item-name">Patatas Carne Mixto</span><span class="item-price">4,00€</span></li>
+        <li><span class="item-name">Kapsalón</span><span class="item-price">8,00€</span></li>
+      </ul>
+      <img src="https://cdn.pixabay.com/photo/2017/05/23/21/57/fries-2334738_1280.jpg" alt="Raciones" class="section-image">
+    </details>
 
-  <section>
-    <h2>Hamburguesas</h2>
-    <ul>
-      <li><img src="img/hamburguesa.jpg" class="menu-img" alt="Hamburguesa">
-          <span class="item-name">Hamburguesa Normal</span>
-          <span class="precio">5,00€</span>
-      </li>
-    </ul>
-    <p><em>También hay hamburguesas sin menú</em></p>
-  </section>
+    <details>
+      <summary>NUESTROS MENÚS</summary>
+      <ul>
+        <li><span class="item-name">Menú Normal</span><span class="item-price">6,50€</span></li>
+        <li><span class="item-name">Menú Kebab Solo Carne</span><span class="item-price">7,00€</span></li>
+        <li><span class="item-name">Menú Dürüm</span><span class="item-price">7,50€</span></li>
+        <li><span class="item-name">Menú Lahmagun</span><span class="item-price">8,00€</span></li>
+        <li><span class="item-name">Menú Nuggets o Alitas (4 uds.) con Patatas</span><span class="item-price">6,50€</span></li>
+        <li><span class="item-name">Menú Kebab Vegetal</span><span class="item-price">6,00€</span></li>
+        <li><span class="item-name">Menú Kebab con Queso</span><span class="item-price">7,00€</span></li>
+        <li><span class="item-name">Menú Kebab Solo Carne</span><span class="item-price">7,00€</span></li>
+        <li><span class="item-name">Menú Kebab en Plato</span><span class="item-price">8,00€</span></li>
+      </ul>
+      <img src="https://cdn.pixabay.com/photo/2022/09/19/13/08/food-7465141_1280.jpg" alt="Menús" class="section-image">
+    </details>
+
+    <details>
+      <summary>MENÚ HAMBURGUESAS</summary>
+      <ul>
+        <li><span class="item-name">Hamburguesa Normal</span><span class="item-price">5,00€</span></li>
+        <li><span class="item-name">Hamburguesa con Queso</span><span class="item-price">6,00€</span></li>
+        <li><span class="item-name">También hay hamburguesas sin menú</span><span class="item-price">—</span></li>
+      </ul>
+      <img src="https://cdn.pixabay.com/photo/2014/10/23/18/05/burger-500054_1280.jpg" alt="Hamburguesa" class="section-image">
+    </details>
+
+  </div>
+  <footer>
+    Ingrediente extra: +0,50€
+  </footer>
 </body>
 </html>
+  <!-- Publicidad flotante con botón de cerrar -->
+  <div id="publicidad" style="
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    max-width: 80%;
+    border: 2px solid #b30000;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    background: white;
+    z-index: 9999;
+  ">
+    <button onclick="document.getElementById('publicidad').style.display='none'" style="
+      position: absolute;
+      top: 5px;
+      right: 10px;
+      background: #b30000;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 25px;
+      height: 25px;
+      font-weight: bold;
+      cursor: pointer;
+    ">×</button>
+    <img src="WhatsApp Image 2025-06-22 at 02.12.35.jpeg" alt="Publicidad Döner Kebab Al-Turk" style="
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      display: block;
+    ">
+  </div>
