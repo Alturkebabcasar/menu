@@ -6,8 +6,8 @@
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      background: #fefefe;
-      margin: 0;
+     background-image: url("fondo.jpeg");
+        
       padding: 0;
       color: #333;
     }
@@ -24,7 +24,7 @@
     }
     details {
       background: #fff;
-      border: 1px solid #ddd;
+      border: 5px solid #970808;
       border-radius: 8px;
       margin-bottom: 1rem;
       box-shadow: 0 2px 6px rgba(0,0,0,0.05);
@@ -192,36 +192,52 @@
   </footer>
 </body>
 </html>
-  <!-- Publicidad flotante con botón de cerrar -->
-  <div id="publicidad" style="
-    position: fixed;
-    bottom: 150px;
-    right: 250px;
-    width: 500px;
-    max-width: 90%;
-    border: 2px solid #b30000;
-    border-radius: 40px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    background: white;
-    z-index: 9999;
+<!-- Publicidad flotante con botón de cerrar -->
+<div id="publicidad" style="
+  position: fixed;
+  bottom: 150px;
+  right: 250px;
+  width: 500px;
+  max-width: 90%;
+  border: 2px solid #b30000;
+  border-radius: 40px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  background: white;
+  z-index: 9999;
+  animation: flotar 3s ease-in-out infinite;
+">
+  <button onclick="document.getElementById('publicidad').style.display='none'" style="
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    background: #6200b3;
+    color: white;
+    border: none;
+    border-radius: 150%;
+    width: 60px;
+    height: 60px;
+    font-weight: bold;
+    cursor: pointer;
+  ">x</button>
+  <img src="publicidad.jpeg" alt="Publicidad Döner Kebab Al-Turk" style="
+    width: 100%;
+    height: auto;
+    border-radius: 38px;
+    display: block;
   ">
-    <button onclick="document.getElementById('publicidad').style.display='none'" style="
-      position: absolute;
-      top: 20px;
-      right: 30px;
-      background: #b30000;
-      color: white;
-      border: none;
-      border-radius: 50%;
-      width: 40px;
-      height: 40px;
-      font-weight: bold;
-      cursor: pointer;
-    ">×</button>
-    <img src="publicidad.jpeg" alt="Publicidad Döner Kebab Al-Turk" style="
-      width: 100%;
-      height: auto;
-      border-radius: 10px;
-      display: block;
-    ">
-  </div>
+</div>
+
+<style>
+@keyframes flotar {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+#publicidad:hover {
+  animation-play-state: paused;
+}
+</style>
